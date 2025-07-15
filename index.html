@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UK Accounting Services - Outsourced Excellence | Save Up to 60%</title>
+    <meta name="description" content="Professional UK accounting solutions delivered by global specialists. Save up to 60% on accounting costs while maintaining HMRC compliance and quality.">
+    <meta name="keywords" content="UK accounting outsourcing, offshore accounting services UK, cost-effective UK accounting, HMRC compliance">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #ffffff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #3498db;
+        }
+
+        .cta-button {
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 30px;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 120px 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            width: 200%;
+            height: 200%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/></svg>') repeat;
+            animation: float 20s linear infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translate(-50%, -50%) rotate(0deg); }
+            100% { transform: translate(-50%, -50%) rotate(360deg); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .hero h2 {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            font-weight: 400;
+            opacity: 0.9;
+        }
+
+        .value-proposition {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .hero-cta {
+            margin-top: 2rem;
+        }
+
+        .hero-cta .cta-button {
+            font-size: 1.2rem;
+            padding: 1rem 2rem;
+            margin: 0 1rem;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #2c3e50;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .service-card h3 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .service-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Why Choose Section */
+        .why-choose {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .benefit-item {
+            text-align: center;
+            padding: 2rem;
+            border-radius: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .benefit-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .benefit-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            font-size: 1.5rem;
+            color: white;
+        }
+
+        .benefit-item h4 {
+            margin-bottom: 1rem;
+            color: #2c3e50;
+        }
+
+        /* Team Section */
+        .team {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+
+        .team-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            margin-top: 3rem;
+        }
+
+        .team-image {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            height: 400px;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        .team-details ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .team-details li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #eee;
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        .team-details li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #27ae60;
+            font-weight: bold;
+        }
+
+        /* Pricing Section */
+        .pricing {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .pricing-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .pricing-card {
+            background: white;
+            border: 2px solid #e9ecef;
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .pricing-card:hover {
+            border-color: #3498db;
+            transform: translateY(-5px);
+        }
+
+        .pricing-card.featured {
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            color: white;
+            border-color: #3498db;
+        }
+
+        .pricing-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .savings-badge {
+            background: #e74c3c;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+
+        /* Security Section */
+        .security {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+
+        .security-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .security-item {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .security-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #27ae60, #2ecc71);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        /* Process Section */
+        .process {
+            padding: 80px 0;
+            background: white;
+        }
+
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .process-step {
+            text-align: center;
+            position: relative;
+        }
+
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #9b59b6, #8e44ad);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 80px 0;
+            background: #2c3e50;
+            color: white;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .contact-item {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            font-size: 1.2rem;
+        }
+
+        /* Footer */
+        footer {
+            background: #34495e;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero h2 {
+                font-size: 1.2rem;
+            }
+
+            .hero-cta .cta-button {
+                display: block;
+                margin: 1rem auto;
+            }
+
+            .team-content {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+
+        /* Scroll animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="logo">UK Accounting Pro</div>
+            <ul class="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#benefits">Benefits</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#contact" class="cta-button">Get Free Quote</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>UK Accounting Services - Outsourced Excellence</h1>
+                <h2>Professional UK accounting solutions delivered by global specialists at unbeatable rates</h2>
+                <div class="value-proposition">
+                    <p><strong>Save up to 60% on accounting costs while maintaining HMRC compliance and quality</strong></p>
+                </div>
+                <div class="hero-cta">
+                    <a href="#contact" class="cta-button">Get Your Free Quote</a>
+                    <a href="#benefits" class="cta-button">Start Saving Today</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Our UK Accounting Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Company Formation & Setup</h3>
+                    <p>Complete incorporation service including Companies House registration, share certificates, and statutory books setup.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Bookkeeping & Management Accounts</h3>
+                    <p>Monthly and quarterly reporting with detailed financial analysis and business insights.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Payroll Services</h3>
+                    <p>Full RTI submissions, auto-enrolment compliance, and employee payslip management.</p>
+                </div>
+                <div class="service-card">
+                    <h3>VAT Returns</h3>
+                    <p>Quarterly VAT submissions, planning strategies, and Making Tax Digital compliance.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Year-End Accounts</h3>
+                    <p>Professional Companies House filing with full compliance and audit support.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Corporation Tax</h3>
+                    <p>Expert CT600 preparation, submission, and tax planning strategies.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Self Assessment</h3>
+                    <p>Personal tax returns with comprehensive tax planning and optimization.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Tax Planning & Advice</h3>
+                    <p>Proactive tax strategies to minimize liabilities and maximize efficiency.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Section -->
+    <section class="why-choose" id="benefits">
+        <div class="container">
+            <h2 class="section-title">Why Choose Our Outsourcing Model</h2>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="benefit-icon">💰</div>
+                    <h4>Cost Efficiency</h4>
+                    <p>Save 50-70% compared to UK-based firms while maintaining quality standards</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">🌍</div>
+                    <h4>24/7 Operations</h4>
+                    <p>Round-the-clock support across time zones for faster turnaround</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">📈</div>
+                    <h4>Scalability</h4>
+                    <p>Easily scale up or down based on your workload requirements</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">🇬🇧</div>
+                    <h4>UK Expertise</h4>
+                    <p>Team specifically trained in UK accounting standards and HMRC requirements</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">⚡</div>
+                    <h4>Faster Turnaround</h4>
+                    <p>Leveraging global workforce for quicker delivery and response times</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">✅</div>
+                    <h4>Quality Assurance</h4>
+                    <p>Multi-level review process and comprehensive quality controls</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">💻</div>
+                    <h4>Technology Integration</h4>
+                    <p>Modern cloud-based accounting systems and automated workflows</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon">👥</div>
+                    <h4>Dedicated Management</h4>
+                    <p>Consistent point of contact and dedicated account management</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team" id="team">
+        <div class="container">
+            <h2 class="section-title">Our Global Team of UK Specialists</h2>
+            <div class="team-content">
+                <div class="team-image">
+                    <div>
+                        <h3>Professional Global Team</h3>
+                        <p>UK-qualified accountants<br>& international specialists</p>
+                    </div>
+                </div>
+                <div class="team-details">
+                    <ul>
+                        <li>UK-qualified accountants and international specialists</li>
+                        <li>Extensive training in UK accounting standards and HMRC requirements</li>
+                        <li>Experience with UK software (Xero, Sage, QuickBooks UK)</li>
+                        <li>Continuous professional development and UK regulatory updates</li>
+                        <li>Multi-level quality review process</li>
+                        <li>English-speaking professionals with UK market understanding</li>
+                        <li>Dedicated account managers for consistent service</li>
+                        <li>Regular training on UK tax law changes and updates</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <h2 class="section-title">Transparent Outsourcing Pricing</h2>
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <h3>Starter Package</h3>
+                    <div class="savings-badge">Save 50%</div>
+                    <p>Perfect for small businesses and sole traders</p>
+                    <ul style="text-align: left; margin: 1rem 0;">
+                        <li>Monthly bookkeeping</li>
+                        <li>VAT returns</li>
+                        <li>Basic payroll</li>
+                        <li>Email support</li>
+                    </ul>
+                    <a href="#contact" class="cta-button">Get Quote</a>
+                </div>
+                <div class="pricing-card featured">
+                    <h3>Professional Package</h3>
+                    <div class="savings-badge">Save 60%</div>
+                    <p>Comprehensive solution for growing businesses</p>
+                    <ul style="text-align: left; margin: 1rem 0;">
+                        <li>Full bookkeeping service</li>
+                        <li>Management accounts</li>
+                        <li>Year-end accounts</li>
+                        <li>Corporation tax</li>
+                        <li>Dedicated account manager</li>
+                    </ul>
+                    <a href="#contact" class="cta-button">Most Popular</a>
+                </div>
+                <div class="pricing-card">
+                    <h3>Enterprise Package</h3>
+                    <div class="savings-badge">Save 70%</div>
+                    <p>Full-service solution for established companies</p>
+                    <ul style="text-align: left; margin: 1rem 0;">
+                        <li>Complete accounting service</li>
+                        <li>Tax planning & advice</li>
+                        <li>Audit support</li>
+                        <li>24/7 priority support</li>
+                        <li>Custom reporting</li>
+                    </ul>
+                    <a href="#contact" class="cta-button">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Section -->
+    <section class="security">
+        <div class="container">
+            <h2 class="section-title">Security & Compliance</h2>
+            <div class="security-grid">
+                <div class="security-item">
+                    <div class="security-icon">🔒</div>
+                    <h4>Data Security</h4>
+                    <p>ISO 27001 certified with encrypted data transmission and storage</p>
+                </div>
+                <div class="security-item">
+                    <div class="security-icon">⚖️</div>
+                    <h4>GDPR Compliance</h4>
+                    <p>Full compliance with UK data protection laws and regulations</p>
+                </div>
+                <div class="security-item">
+                    <div class="security-icon">🛡️</div>
+                    <h4>Professional Indemnity</h4>
+                    <p>Comprehensive insurance coverage for complete peace of mind</p>
+                </div>
+                <div class="security-item">
+                    <div class="security-icon">🤝</div>
+                    <h4>Confidentiality</h4>
+                    <p>Strict NDAs and data protection protocols for all staff</p>
+                </div>
+                <div class="security-item">
+                    <div class="security-icon">🏛️</div>
+                    <h4>HMRC Compliance</h4>
+                    <p>Expert knowledge of UK tax regulations and requirements</p>
+                </div>
+                <div class="security-item">
+                    <div class="security-icon">📋</div>
+                    <h4>Quality Certifications</h4>
+                    <p>ISO 9001 quality management systems and processes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process">
+        <div class="container">
+            <h2 class="section-title">How We Work</h2>
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h4>Seamless Onboarding</h4>
+                    <p>Easy setup and integration process with your existing systems</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h4>Dedicated Manager</h4>
+                    <p>Single point of contact for all your accounting needs</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h4>Real-time Communication</h4>
+                    <p>Regular updates and progress reports throughout the process</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <h4>Secure File Sharing</h4>
+                    <p>Encrypted document exchange and secure client portal</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <h4>Quality Review</h4>
+                    <p>Multiple review stages to ensure accuracy and compliance</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">6</div>
+                    <h4>Timely Delivery</h4>
+                    <p>Guaranteed response within 24 hours and on-time delivery</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">Get Your Free Cost Analysis</h2>
+            <p style="text-align: center; font-size: 1.2rem; margin-bottom: 2rem;">Start saving up to 60% on your accounting costs today</p>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <h4>Email Support</h4>
+                    <p>info@ukaccountingpro.com<br>24-hour response guarantee</p>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📞</div>
+                    <h4>Phone Consultation</h4>
+                    <p>+44 20 7123 4567<br>Free 30-minute consultation</p>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">💬</div>
+                    <h4>Live Chat</h4>
+                    <p>Instant support during business hours<br>Mon-Fri 9AM-6PM GMT</p>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📹</div>
+                    <h4>Video Conferencing</h4>
+                    <p>Skype & Zoom consultations<br>Face-to-face meetings available</p>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="mailto:info@ukaccountingpro.com" class="cta-button" style="font-size: 1.2rem; padding: 1rem 2rem;">Start Your Free Trial</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 UK Accounting Pro. All rights reserved. | Professional UK accounting services delivered globally.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections for animation
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('fade-in');
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
